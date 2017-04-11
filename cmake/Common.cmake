@@ -13,6 +13,7 @@ if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
     # -Wall enables "all" warnings, which is a misnomer because it isn't
     #   actually all of them
     # -Wextra enables some of the warnings that -Wall doesn't include
+    set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -std=c99")
     set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -std=c99 -pedantic -Wall -Wextra \
         -Werror -pedantic-errors")
 endif()
