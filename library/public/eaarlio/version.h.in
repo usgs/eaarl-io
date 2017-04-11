@@ -6,9 +6,11 @@
  * @brief Version information for the library
  *
  * The eaarlio library follows [Semantic Versioning 2.0.0] for its version
- * numbers. This means that a version number consists of three or four
+ * numbers. This means that a version number consists of three to five
  * components. Release versions are numbered as MAJOR.MINOR.PATCH and
- * pre-release versions are numbered as MAJOR.MINOR.PATCH-PRERELEASE.
+ * pre-release versions are numbered as MAJOR.MINOR.PATCH-PRERELEASE. If git
+ * is found at build time, then the commit hash is additionally appended as
+ * "+GIT".
  *
  * The full version string is available in ::EAARLIO_VERSION. However, each
  * component is also separately defined to make it easier to do version
@@ -22,6 +24,8 @@
  * - ::EAARLIO_VERSION_PRERELEASE is defined only when this is a pre-release
  *   version; pre-release versions should be considered unstable and may not
  *   properly satisfy the compatibility indicated by the version number
+ * - ::EAARLIO_VERSION_GIT is defined when git is available at build-time; it is
+ *   metadata and should be ignored when evaluating the version number
  *
  * [Semantic Versioning 2.0.0]: http://semver.org/spec/v2.0.0.html
  */
@@ -78,11 +82,31 @@
 #endif
 
 /**
+ * @def EAARLIO_VERSION_GIT
+ * @brief Git commit hash for the current build
+ *
+ * This is left undefined if git could not be found at compile time. If
+ * defined, it provides the commit hash of the repository at build time.
+ *
+ * In Doxygen, this symbol will be shown without a value when it is not
+ * defined.
+ */
+#cmakedefine EAARLIO_VERSION_GIT "@EAARLIO_VERSION_GIT@"
+/* Ugly hack to make Doxygen document it even when it's undefined */
+#ifdef _DOXYGEN_
+#ifndef EAARLIO_VERSION_GIT
+#define EAARLIO_VERSION_GIT
+#endif
+#endif
+
+/**
  * Current version as string
  *
  * This is always defined as a string representing the full version. For
  * releases, it will be "MAJOR.MINOR.PATCH". For pre-releases, it will be
- * "MAJOR.MINOR.PATCH-PRERELEASE".
+ * "MAJOR.MINOR.PATCH-PRERELEASE". If git was detected during compilation,
+ * then the commit hash is additionally included after a plus sign:
+ * "MAJOR.MINOR.PATCH+GIT" or "MAJOR.MINOR.PATCH-PRERELEASE+GIT".
  */
 #define EAARLIO_VERSION "@EAARLIO_VERSION_FULL@"
 
