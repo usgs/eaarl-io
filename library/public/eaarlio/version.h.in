@@ -1,0 +1,89 @@
+#ifndef EAARLIO_VERSION_H
+#define EAARLIO_VERSION_H
+
+/**
+ * @file eaarlio/version.h
+ * @brief Version information for the library
+ *
+ * The eaarlio library follows [Semantic Versioning 2.0.0] for its version
+ * numbers. This means that a version number consists of three or four
+ * components. Release versions are numbered as MAJOR.MINOR.PATCH and
+ * pre-release versions are numbered as MAJOR.MINOR.PATCH-PRERELEASE.
+ *
+ * The full version string is available in ::EAARLIO_VERSION. However, each
+ * component is also separately defined to make it easier to do version
+ * checking.
+ *
+ * - ::EAARLIO_VERSION_MAJOR increments when an incompatible API change is made
+ * - ::EAARLIO_VERSION_MINOR increments when new functionality is added that
+ *   is backwards-compatible
+ * - ::EAARLIO_VERSION_PATCH increments when backwards-compatible bug fixes are
+ *   made
+ * - ::EAARLIO_VERSION_PRERELEASE is defined only when this is a pre-release
+ *   version; pre-release versions should be considered unstable and may not
+ *   properly satisfy the compatibility indicated by the version number
+ *
+ * [Semantic Versioning 2.0.0]: http://semver.org/spec/v2.0.0.html
+ */
+
+/**
+ * Current major version
+ *
+ * This will always be defined as an integer. It increments when an
+ * incompatible API change is made.
+ */
+#define EAARLIO_VERSION_MAJOR @EAARLIO_VERSION_MAJOR@
+
+/**
+ * Current minor version
+ *
+ * This will always be defined as an integer. It increments when new
+ * functionality is added that is backwards-compatible. It resets to 0 when
+ * ::EAARLIO_VERSION_MAJOR is incremented.
+ */
+#define EAARLIO_VERSION_MINOR @EAARLIO_VERSION_MINOR@
+
+/**
+ * Current patch version
+ *
+ * This will always be defined as in integer. It increments when
+ * backwards-compatible bug fixes are made. It resets to 0 when
+ * ::EAARLIO_VERSION_MAJOR or ::EAARLIO_VERSION_MINOR are incremented.
+ */
+#define EAARLIO_VERSION_PATCH @EAARLIO_VERSION_PATCH@
+
+/**
+ * @def EAARLIO_VERSION_PRERELEASE
+ * @brief Current prerelease version
+ *
+ * This is left undefined for release versions. For pre-release versions, it is
+ * always defined as a string. Example values are "rc1" or "beta".
+ *
+ * In Doxygen, this symbol will be shown without a value when it is not
+ * defined.
+ *
+ * You can check if you are using a prerelease by using:
+ * ```c
+ * #ifdef EAARLIO_VERSION_PRERELEASE
+ *   // This is a prerelease version
+ * #endif
+ * ```
+ */
+#cmakedefine EAARLIO_VERSION_PRERELEASE "@EAARLIO_VERSION_PRERELEASE@"
+/* Ugly hack to make Doxygen document it even when it's undefined */
+#ifdef _DOXYGEN_
+#ifndef EAARLIO_VERSION_PRERELEASE
+#define EAARLIO_VERSION_PRERELEASE
+#endif
+#endif
+
+/**
+ * Current version as string
+ *
+ * This is always defined as a string representing the full version. For
+ * releases, it will be "MAJOR.MINOR.PATCH". For pre-releases, it will be
+ * "MAJOR.MINOR.PATCH-PRERELEASE".
+ */
+#define EAARLIO_VERSION "@EAARLIO_VERSION_FULL@"
+
+#endif

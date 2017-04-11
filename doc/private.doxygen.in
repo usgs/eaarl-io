@@ -1,0 +1,14 @@
+@INCLUDE = public.doxygen
+LAYOUT_FILE =
+PROJECT_BRIEF = "EAARL Input/Output Library (Developer Docs)"
+INPUT = "@PROJECT_SOURCE_DIR@/library/public" \
+	"@PROJECT_BINARY_DIR@/library/public" \
+	"@PROJECT_SOURCE_DIR@/library/private" \
+	"@PROJECT_SOURCE_DIR@/doc"
+FULL_PATH_NAMES = YES
+STRIP_FROM_PATH = "@PROJECT_SOURCE_DIR@/doc" \
+        "@PROJECT_SOURCE_DIR@" \
+        "@PROJECT_BINARY_DIR@"
+OUTPUT_DIRECTORY = "@PROJECT_BINARY_DIR@/dev-doc"
+EXTRACT_STATIC = YES
+INTERNAL_DOCS = YES

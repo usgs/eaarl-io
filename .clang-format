@@ -1,0 +1,26 @@
+---
+Language: Cpp
+BasedOnStyle:  WebKit
+AllowShortFunctionsOnASingleLine: None
+AlwaysBreakBeforeMultilineStrings: true
+BinPackParameters: false
+BreakBeforeBinaryOperators: NonAssignment
+ColumnLimit: 80
+IncludeIsMainRegex: '(_[^_]*)?$'
+IncludeCategories:
+    - Regex:           '^<'
+      Priority:        4
+    - Regex:           '^"eaarlio/'
+      Priority:        1
+    - Regex:           '^"(argtable|greatest)'
+      Priority:        2
+    - Regex:           '.*'
+      Priority:        3
+IndentCaseLabels: true
+PointerAlignment: Right
+SpaceBeforeParens: Never
+ReflowComments:  false
+AllowAllParametersOfDeclarationOnNextLine: false
+IndentWidth: 4
+PenaltyReturnTypeOnItsOwnLine: 1000
+...

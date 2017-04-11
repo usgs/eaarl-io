@@ -1,0 +1,44 @@
+/**
+
+@example example_edb_read.c
+This illustrates how to use a file-based stream to load an EDB file's data. It
+also illustrates how to make use of the fields found in the ::eaarlio_edb
+structure.
+
+If you're primarily interested in reading raster data, you'll probably want to
+use ::eaarlio_file_flight instead. See @ref example_flight_read_rasters.c.
+
+@example example_edb_write.c
+This provides a contrived example of writing out an EDB file. For a better
+example of how to create an EDB file, see programs/eaarlio_edb_create.c.
+
+@example example_errors.c
+This demonstrates how to work with the ::eaarlio_error values returned by most
+library functions.
+
+@example example_flight_read_rasters.c
+This provides an example of how to read rasters using ::eaarlio_file_flight.
+
+@example example_flight_read_raster_pulse.c
+This provides an example of how to read raster and pulse data using
+::eaarlio_file_flight.
+
+@example example_file_tld_opener.c
+This provides an example of how to use ::eaarlio_file_tld_opener.
+
+@example memory_stdlib.c
+This provides an example of how to implement a memory handler. The code below
+is actually the internal implementation used for the default memory handler
+(which is used when you pass @c NULL for the memory handler).
+
+@example file_stream.c
+This provides an example of how to implement a stream. The code below is the
+internal implementation for the standard file-based streams accessible via
+::eaarlio_file_stream.
+
+@example eaarlio_yaml.c
+This example is the source code for the included eaarlio_yaml program, which
+outputs EAARL raster data in YAML format. It provides a more comprehensive and
+real-world example of how to use the library than the simpler examples.
+
+*/

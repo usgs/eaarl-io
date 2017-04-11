@@ -1,0 +1,24 @@
+PROJECT_NAME = eaarl-io
+PROJECT_NUMBER = "@EAARLIO_VERSION_FULL@"
+PROJECT_BRIEF = "EAARL Input/Output Library (Public API)"
+LAYOUT_FILE = "@PROJECT_SOURCE_DIR@/doc/DoxygenLayout.xml"
+INPUT = "@PROJECT_SOURCE_DIR@/library/public" \
+	"@PROJECT_BINARY_DIR@/library/public" \
+	"@PROJECT_SOURCE_DIR@/doc"
+JAVADOC_AUTOBRIEF = YES
+OPTIMIZE_OUTPUT_FOR_C = YES
+EXTRACT_ALL = YES
+RECURSIVE = YES
+GENERATE_LATEX = YES
+OUTPUT_DIRECTORY = "@PROJECT_BINARY_DIR@/doc"
+PREDEFINED = _DOXYGEN_
+FULL_PATH_NAMES = NO
+EXAMPLE_PATH = "@PROJECT_SOURCE_DIR@/programs" \
+	"@PROJECT_SOURCE_DIR@/examples" \
+	"@PROJECT_SOURCE_DIR@/library/private" \
+	"@PROJECT_SOURCE_DIR@/library/tests"
+IGNORE_PREFIX = eaarlio_ EAARLIO_
+ALIASES += returns_eaarlio_error="\returns On success, ::EAARLIO_SUCCESS.\n\returns On failure, ::eaarlio_error representing the failure condition.\n"
+PAPER_TYPE = letter
+LATEX_TIMESTAMP = YES
+INLINE_SIMPLE_STRUCTS = YES
