@@ -75,7 +75,7 @@ The library comes with three utility programs:
 For usage on each, run the command with the "-h" option. For example,
 `eaarlio_edb_create -h`.
 
-## Compilation and Installation
+## Building
 
 You will need [CMake](https://cmake.org) to generate build files for your
 platform. CMake is used to support cross-platform build configuration.
@@ -101,7 +101,7 @@ make
 
 ### Windows with Visual Studio 2015
 
-To basic steps to compile on Windows using Visual Studio 2015:
+The basic steps to compile on Windows using Visual Studio 2015:
 
 1. Launch the CMake GUI
     1. Select the source code directory ("Where is the source code:")
