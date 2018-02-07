@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "eaarlio/error.h"
 
@@ -9,8 +10,12 @@ int main(int argc, char *argv[])
     eaarlio_error err;
     int failed;
 
-    if(argc < 2) {
-        printf("Usage: example_errors <int> [<int> ...]\n");
+    if(argc < 2 || 0 == strncmp(argv[1], "-h", 3) || 0 == strncmp(argv[1], "--help", 7)) {
+        printf("Usage: example_errors [-h] <code> [<code> ...]\n");
+        printf("Example of interpreting error codes\n");
+        printf("\n");
+        printf("  -h, --help  display this help and exit\n");
+        printf("  <code>      an integer value representing an error code\n");
         return 1;
     }
 

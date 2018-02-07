@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "eaarlio/error.h"
 #include "eaarlio/file.h"
@@ -11,10 +12,14 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 4) {
-        printf(
-            "Usage: example_flight_read_raster <file.edb> <raster_number> "
-            "<pulse_number>\n");
+    if(argc != 4 || 0 == strncmp(argv[1], "-h", 3) || 0 == strncmp(argv[1], "--help", 7)) {
+        printf("Usage: example_flight_read_raster [-h] <edb file> <raster number> <pulse number>\n");
+        printf("Example of reading pulse data using eaarlio_flight\n");
+        printf("\n");
+        printf("  -h, --help       display this help and exit\n");
+        printf("  <edb file>       EDB file for dataset\n");
+        printf("  <raster number>  raster number to read\n");
+        printf("  <pulse number>   pulse number to read\n");
         return 1;
     }
 

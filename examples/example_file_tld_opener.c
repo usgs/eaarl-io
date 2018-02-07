@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "eaarlio/error.h"
 #include "eaarlio/file.h"
@@ -10,8 +11,16 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 3) {
-        printf("Usage: example_file_tld_opener <tld path> <tld file>\n");
+    if(argc != 3 || 0 == strncmp(argv[1], "-h", 3) || 0 == strncmp(argv[1], "--help", 7)) {
+        printf("Usage: example_file_tld_opener [-h] <tld path> <tld file>\n");
+        printf("Example of using eaarlio_tld_opener\n");
+        printf("\n");
+        printf("Note that the directory component and filename component of the TLD file\n");
+        printf("must be provided separately.\n");
+        printf("\n");
+        printf("  -h, --help  display this help and exit\n");
+        printf("  <tld path>  directory that the TLD file is located in\n");
+        printf("  <tld file>  filename of the TLD file\n");
         return 1;
     }
 

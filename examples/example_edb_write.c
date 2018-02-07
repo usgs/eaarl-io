@@ -1,6 +1,7 @@
 #include <inttypes.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "eaarlio/edb.h"
 #include "eaarlio/error.h"
@@ -8,8 +9,12 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 2) {
-        printf("Usage: example_edb_write <file.edb>\n");
+    if(argc != 2 || 0 == strncmp(argv[1], "-h", 3) || 0 == strncmp(argv[1], "--help", 7)) {
+        printf("Usage: example_edb_write [-h] <edb file>\n");
+        printf("Example of writing to an EDB, using fixed sample data\n");
+        printf("\n");
+        printf("  -h, --help  display this help and exit\n");
+        printf("  <edb file>  EDB file to write\n");
         return 1;
     }
 
