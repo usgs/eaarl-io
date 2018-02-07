@@ -26,7 +26,8 @@ int main(int argc, char *argv[])
     struct eaarlio_edb edb = eaarlio_edb_empty();
 
     // For the purposes of this example, we're writing out an EDB using
-    // hard-coded data.
+    // hard-coded data. For a more comprehensive example, look at the source
+    // for the eaarlio_edb_create program.
 
     struct eaarlio_edb_record records[] = {
         {
