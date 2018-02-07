@@ -1,7 +1,19 @@
 # EAARL Input/Output Library
 
-This library provides I/O routines for working with the raw data collected by
-the EAARL-A and EAARL-B lidar systems.
+This library provides a C API that you can use within your own programs for I/O
+access to raw data collected by the EAARL-A and EAARL-B lidar systems. As such,
+the primary intended audience for this library are users who are need to add
+EAARL I/O capabilities to their existing applications.
+
+A few small standalone utility programs are also included that can be used to
+inspect EAARL data. One of the program exports the data as YAML, a common
+human-readable data format. This provides users another avenue for getting
+EAARL data into their existing applications.
+
+The EAARL sensors were operational between 2001 and 2014. This library is part
+of a final effort to make EAARL data acquisitions more accessible to the
+public. The USGS has no plans for further development or support of EAARL or of
+its associated software (including this library).
 
 ## Building
 
