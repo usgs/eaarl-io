@@ -9,7 +9,7 @@ The project is set up to use clang-format to enforce a consistent coding style.
 The style is configured in .clang-format and is based on the WebKit style, with
 some modifications.
 
-In Bash on Linux, you can run clang=format on all files in a directory
+In Bash on Linux, you can run clang-format on all files in a directory
 recursively using this command:
 
 ```sh

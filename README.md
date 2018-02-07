@@ -11,6 +11,7 @@ platform. CMake is used to support cross-platform build configuration.
 The basic steps to compile on Linux using gcc and make:
 
 ```sh
+mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make

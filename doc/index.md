@@ -94,6 +94,7 @@ However, the library is also known to compile on these platforms:
 The basic steps to compile on Linux using gcc and make:
 
 ```sh
+mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make
