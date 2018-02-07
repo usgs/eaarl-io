@@ -18,7 +18,7 @@
       <tab type="hierarchy" visible="yes" title="" intro=""/>
       <tab type="classmembers" visible="yes" title="" intro="Below is an index of all struct fields with links to the structures they belong to."/>
     </tab>
-    <tab type="examples" visible="yes" title="" intro="These files provide examples of how to use the API. The recommended starting places are example_flight_read_rasters.c and example_flight_read_raster_pulse.c. Examples that start with &quot;example&quot; are working examples located in the examples folder that can be compiled and run. Examples that start with &quot;eaarlio&quot; are the source code for programs found in the programs folder. Other files are source code from the library itself."/>
+    <tab type="examples" visible="yes" title="" intro="These files provide examples of how to use the API. The recommended starting places are example_flight_read_rasters.c and example_flight_read_raster_pulse.c. Examples that start with &quot;example&quot; are working examples located in the examples folder that can be compiled and run (but note that they are not built by the default target; you will need to build the examples target). Examples that start with &quot;eaarlio&quot; are the source code for programs found in the programs folder. Other files are source code from the library itself."/>
     <tab type="pages" visible="yes" title="Supplementary" intro="These pages provide supplementary documentation."/>
   </navindex>
 
