@@ -3,7 +3,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 enable_testing()
 
 project(EAARLIO
-    VERSION 0.1.0
+    VERSION 1.0.0
     LANGUAGES C)
 
 include(Common)
@@ -21,7 +21,7 @@ endif()
 
 # For release versions, comment out EAARLIO_VERSION_PRERELEASE so that it is
 # undefined. If this is not a release version, then this should be defined.
-set(EAARLIO_VERSION_PRERELEASE "alpha")
+#set(EAARLIO_VERSION_PRERELEASE "alpha")
 
 if(EAARLIO_VERSION_PRERELEASE)
     set(EAARLIO_VERSION_FULL "${EAARLIO_VERSION}-${EAARLIO_VERSION_PRERELEASE}")
