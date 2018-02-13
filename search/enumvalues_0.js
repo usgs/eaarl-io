@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['eaarlio_5fbuffer_5fshort',['EAARLIO_BUFFER_SHORT',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daac661345cd0e9013bb64426b34af17872',1,'error.h']]],
+  ['eaarlio_5fcorrupt',['EAARLIO_CORRUPT',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa9dc52f68643e6b28f4be2ce83b4af194',1,'error.h']]],
+  ['eaarlio_5fedb_5ffilename_5ftoo_5flong',['EAARLIO_EDB_FILENAME_TOO_LONG',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa4108a51cf2e09553e5c610571a0b92a0',1,'error.h']]],
+  ['eaarlio_5ferror_5funknown',['EAARLIO_ERROR_UNKNOWN',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa41f42c56765384c2231f7d4173194d2e',1,'error.h']]],
+  ['eaarlio_5fflight_5finvalid',['EAARLIO_FLIGHT_INVALID',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daad3348b086e0548344ac5ec9a4423a960',1,'error.h']]],
+  ['eaarlio_5fflight_5fraster_5finvalid',['EAARLIO_FLIGHT_RASTER_INVALID',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa211c69067a9143da9cd400813de89d63',1,'error.h']]],
+  ['eaarlio_5fmemory_5falloc_5ffail',['EAARLIO_MEMORY_ALLOC_FAIL',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daaf8b1d1c1878c7684885d103abdfa0562',1,'error.h']]],
+  ['eaarlio_5fmemory_5finvalid',['EAARLIO_MEMORY_INVALID',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa9a994ba20cffa40075563b34061ff68a',1,'error.h']]],
+  ['eaarlio_5fnull',['EAARLIO_NULL',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa178eb1019702987ac76c9ed01d1949aa',1,'error.h']]],
+  ['eaarlio_5fstream_5fclose_5ferror',['EAARLIO_STREAM_CLOSE_ERROR',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa5a4cefc664424faafea96b15042b3ab7',1,'error.h']]],
+  ['eaarlio_5fstream_5finvalid',['EAARLIO_STREAM_INVALID',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daabad7dbdeed717e5007f350306e8838b5',1,'error.h']]],
+  ['eaarlio_5fstream_5fnot_5fimpl',['EAARLIO_STREAM_NOT_IMPL',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa54abf4d0a28e302799ba7ec83294a923',1,'error.h']]],
+  ['eaarlio_5fstream_5fopen_5ferror',['EAARLIO_STREAM_OPEN_ERROR',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa89763f8792a3fdf96a34cd40bde0a2b5',1,'error.h']]],
+  ['eaarlio_5fstream_5fread_5ferror',['EAARLIO_STREAM_READ_ERROR',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa1b1e8ca1bd24a1e716878490f7ded79e',1,'error.h']]],
+  ['eaarlio_5fstream_5fread_5fshort',['EAARLIO_STREAM_READ_SHORT',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa142ca74a88ec0957b0de830bc3a049cd',1,'error.h']]],
+  ['eaarlio_5fstream_5fseek_5ferror',['EAARLIO_STREAM_SEEK_ERROR',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daae49aac67e93c27f7d59f3212c20a934c',1,'error.h']]],
+  ['eaarlio_5fstream_5fseek_5finvalid',['EAARLIO_STREAM_SEEK_INVALID',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daaaab412925b7a215267c122c7b8d039ee',1,'error.h']]],
+  ['eaarlio_5fstream_5ftell_5ferror',['EAARLIO_STREAM_TELL_ERROR',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa0b6bfdd4437fcffd4dd4d290c93be3f1',1,'error.h']]],
+  ['eaarlio_5fstream_5fwrite_5ferror',['EAARLIO_STREAM_WRITE_ERROR',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa4957f4d73b8044dbdce9f07e75867408',1,'error.h']]],
+  ['eaarlio_5fstream_5fwrite_5fshort',['EAARLIO_STREAM_WRITE_SHORT',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa08c566847058f8ef3c0e07a7237c1af9',1,'error.h']]],
+  ['eaarlio_5fstring_5funterminated',['EAARLIO_STRING_UNTERMINATED',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa9c41aafd2d513beb5222efeae95b11ad',1,'error.h']]],
+  ['eaarlio_5fsuccess',['EAARLIO_SUCCESS',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa4c3965102c848b57a126739947d2d321',1,'error.h']]],
+  ['eaarlio_5ftld_5fopener_5finvalid',['EAARLIO_TLD_OPENER_INVALID',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa0d23e5ebc00b4ca058ad18ae3f62d0e2',1,'error.h']]],
+  ['eaarlio_5ftld_5ftype_5funknown',['EAARLIO_TLD_TYPE_UNKNOWN',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa7e7471b4c11ab0ded778b3e37088b563',1,'error.h']]],
+  ['eaarlio_5fvalue_5fout_5fof_5frange',['EAARLIO_VALUE_OUT_OF_RANGE',['../error_8h.html#ab521cfac8459159183fdbe58c1db55daa4c99f8a3d1fdb80cc4ee650ce20cf3e8',1,'error.h']]]
+];
