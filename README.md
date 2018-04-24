@@ -85,13 +85,16 @@ documentation.
 
 ## License
 
-This software is licensed under
-[CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/) and is in the
-[public domain](https://en.wikipedia.org/wiki/Public_domain) because it
-contains materials that originally came from the [U.S. Geological Survey
-(USGS)](https://www.usgs.gov/), an agency of the [United States Department of
-Interior](https://www.doi.gov/). For more information, see the [official USGS
-copyright policy](http://www.usgs.gov/visual-id/credit_usgs.html#copyright/).
+This software is licensed under [CC0 1.0] and is in the [public domain] because
+it contains materials that originally came from the [U.S. Geological Survey
+(USGS)], an agency of the [United States Department of Interior]. For more
+information, see the [official USGS copyright policy].
+
+[CC0 1.0]: http://creativecommons.org/publicdomain/zero/1.0/
+[public domain]: https://en.wikipedia.org/wiki/Public_domain
+[U.S. Geological Survey (USGS)]: https://www.usgs.gov/
+[United States Department of Interior]: https://www.doi.gov/
+[official USGS copyright policy]: http://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
 
 ## Disclaimer
 
