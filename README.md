@@ -17,8 +17,15 @@ or generating the documentation locally.
 
 The EAARL sensors were operational between 2001 and 2014. This library is part
 of a final effort to make EAARL data acquisitions more accessible to the
-public. The USGS has no plans for further development or support of EAARL or of
-its associated software (including this library).
+public. Related software includes:
+
+* [eaarl-py](https://github.com/usgs/eaarl-py), a starting place for exploring
+  EAARL data in Python. It allows you to access EAARL waveform data and
+  provides a simplified basic processing workflow that you can adapt to
+  experiment with the data.
+
+The USGS has no plans for further development or support of EAARL or of its
+associated software (including this library).
 
 ## Building
 
