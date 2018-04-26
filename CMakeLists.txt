@@ -3,7 +3,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 enable_testing()
 
 project(EAARLIO
-    VERSION 1.0.0
+    VERSION 1.0.1
     LANGUAGES C)
 
 include(Common)

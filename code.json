@@ -7,10 +7,40 @@
   "releases": [
     {
       "name": "eaarl-io",
+      "version": "1.0.1",
+      "organization": "U.S. Geological Survey",
+      "description": "A library that provides I/O routines for working with the raw data collected by the EAARL-A and EAARL-B lidar systems.",
+      "permissions": {
+        "licenses": [
+          {
+            "URL": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "name": "CC0"
+          }
+        ],
+        "usageType": "openSource"
+      },
+      "tags": [
+        "eaarl",
+        "lidar",
+        "remote sensing",
+        "waveforms"
+      ],
+      "contact": {
+        "email": "gs-g-spcmsc_data_inquiries@usgs.gov",
+        "name": "Data Management"
+      },
+      "status": "Beta",
+      "vcs": "git",
+      "repositoryURL": "https://github.com/usgs/eaarl-io",
+      "languages": [
+        "c"
+      ]
+    },
+    {
+      "name": "eaarl-io",
       "version": "1.0.0",
       "organization": "U.S. Geological Survey",
       "description": "A library that provides I/O routines for working with the raw data collected by the EAARL-A and EAARL-B lidar systems.",
-      
       "permissions": {
         "licenses": [
           {
